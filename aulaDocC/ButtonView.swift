@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-///View responsável pelo componente do Botão ``ButtonView``
+///View responsável pelo componente do Botão 
 ///
 /// - Parameters:
 ///     - texto: Texto usado para o botão
@@ -30,7 +30,7 @@ struct ButtonView: View {
         self.texto = texto
         self.cor = cor
     }
-    
+    // MARK: Body
     /// Corpo do componente do botão
     var body: some View {
         Text(texto)

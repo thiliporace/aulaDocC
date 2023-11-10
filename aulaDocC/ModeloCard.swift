@@ -2,7 +2,7 @@
 
 import SwiftUI
 
-///View para criar o card
+///View que mostra o card
 ///
 /// - Parameters:
 ///     - Nome: Nome que irá aparecer no card
@@ -16,9 +16,15 @@ struct ModeloCard: View {
   var Capa: String = "Chevis"
   ///Cargo que irá aparecer embaixo do nome no Card
   var Cargo: String = "Programador"
+    
+    //MARK: Body
+  /// Corpo do modelo do Card
   var body: some View {
+      
     ZStack{
+        
       HStack{
+          
           Image(Capa)
             .resizable()
             .scaledToFit()
